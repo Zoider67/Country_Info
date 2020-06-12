@@ -26,5 +26,15 @@ namespace Country_Info
         {
             this.InitializeComponent();
         }
+
+        private void FindButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CountryPage), CountryTextBlock.Text);
+        }
+
+        private void FromDBButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

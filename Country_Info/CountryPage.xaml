@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="Country_Info.CountryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Country_Info"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="100,100,100,200" Orientation="Horizontal">
+            <StackPanel Width=" 250">
+                <TextBlock HorizontalAlignment="Left" Text="Название:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="Код страны:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="Столица:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="Площадь:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="Население:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="Регион:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left" Text="" Name="NameTextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="" Name="CodeTextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="" Name="CapitalTextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="" Name="AreaTextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="" Name="PopulationTextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+                <TextBlock HorizontalAlignment="Left" Text="" Name="RegionTextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" FontSize="24" Margin=" 20, 20, 0, 0"/>
+
+            </StackPanel>
+        </StackPanel>
+        <Button Content="Сохранить в базу" Margin="857,525,0,0" VerticalAlignment="Top" FontSize="24" Name="SaveButton" Click="SaveButton_Click"/>
+        <Button Content="Не сохранять" Margin="857,595,0,0" VerticalAlignment="Top" FontSize="24" Width="211" Click="DontSaveButton_Click" Name="DontSaveButton"/>
+
+
+
+    </Grid>
+</Page>

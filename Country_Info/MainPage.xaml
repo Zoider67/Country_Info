@@ -6,9 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
 
     <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="10,56,0,0" Text="Введите название страны" TextWrapping="Wrap" VerticalAlignment="Top" Name="CountryTextBlock"/>
+        <Button Content="Поиск" Margin="200,56,0,0" VerticalAlignment="Top" Name="FindButton" Click="FindButton_Click"/>
+        <Button Content="Вывод всех стран из БД" Margin="330,56,0,0" VerticalAlignment="Top" Width="175" Name="FromDBButton" Click="FromDBButton_Click"/>
 
     </Grid>
 </Page>
