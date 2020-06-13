@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -39,7 +40,6 @@ namespace Country_Info
                     try
                     {
                         string result = await httpClient.GetStringAsync(uri);
-                        NameTextBlock.Text = result;
                     }
                     catch (Exception ex)
                     {

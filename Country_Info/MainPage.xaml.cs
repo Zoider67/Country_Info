@@ -25,6 +25,10 @@ namespace Country_Info
         public MainPage()
         {
             this.InitializeComponent();
+            using (CountriesDBContext db = new CountriesDBContext())
+            {
+
+            }
         }
 
         private void FindButton_Click(object sender, RoutedEventArgs e)
